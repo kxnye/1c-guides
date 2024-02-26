@@ -1,0 +1,465 @@
+1. Creating a subsystem
+In the configurator, go to the "Configuration" -> "Subsystems" section.
+Click the "Create" button and enter the name of the subsystem, for example, "Furniture manufacturing".
+In the properties of the subsystem, indicate which objects (directories, documents, registers) will be included in it. This can be done later, when all the necessary objects have been created.
+2. Creation of directories
+To account for materials, products and other elements related to the manufacture of furniture, you will need to create appropriate directories.
+
+An example of creating a "Materials" directory:
+In the "Configuration" section, select "Directories" and click "Create".
+Enter the name of the directory, for example, "Materials".
+Add the necessary details, such as “Name”, “Unit of measurement”, “Price”, etc.
+Create list and directory item forms for convenient work with data.
+For other elements (products, suppliers, customers, etc.), proceed in the same way.
+3. Creation of documents
+Documents may include production orders, invoices for materials, and other types of documents necessary to record furniture manufacturing processes.
+
+An example of creating a "Production Order" document:
+In the Configuration section, select Documents and click Create.
+Enter a title for the document, for example, "Production Order".
+Add the necessary details, such as “Order date”, “Customer” (link to the directory), “List of products” (tabular part with links to the product directory).
+Create document forms for easy entry and viewing of information.
+4. Create registers
+Registers are necessary to record movements of materials, finances and other important aspects of the production process.
+
+An example of creating an accumulation register "Material Accounting":
+In the "Configuration" section, select "Accumulation registers" and click "Create".
+Enter the name of the register, for example, "Materials Accounting".
+Define dimensions (for example, Material, Stock) and resources (for example, Quantity, Cost).
+Set up postings to reflect movements in this register in documents.
+5. Setting access rights
+Don't forget to configure access rights to created objects for different categories of users through the "Users and Rights" section.
+
+Conclusion
+After creating all the necessary elements of the “Furniture Manufacturing” subsystem, it is necessary to thoroughly test the operation of the configuration: check the correctness of document processing, the correctness of accounting in registers, the ease of working with directories, etc. This will ensure efficient and uninterrupted operation of the subsystem within the 1C:Enterprise program.
+..
+Directory "Materials"
+This guide is intended to account for all materials used in the manufacture of furniture.
+
+Basic details:
+
+Name: name of the material, for example, "Oak board".
+Article: unique material code.
+Unit of measurement: meters, square meters, cubic meters, pieces, etc.
+Unit Price: The cost of one unit of material.
+Supplier: link to the "Suppliers" directory.
+Category: for example, "Wood", "Fittings", "Fasteners".
+Minimum balance: the minimum quantity of material in stock, upon reaching which an additional order must be ordered.
+Directory "Products"
+This takes into account finished products or products that are planned to be manufactured.
+
+Basic details:
+
+Name: the name of the product, for example, “Dining table”.
+Article: unique product code.
+Sale Price: The recommended retail price of the product.
+Cost: The estimated cost of producing a product.
+Composition: a tabular part that indicates the materials and their quantity required for the manufacture of the product.
+Production Time: The estimated time required to produce the product.
+Directory "Customers"
+Handbook for recording customer information.
+
+Basic details:
+
+Name: full name or name of the customer's organization.
+TIN/KPP (for organizations): taxpayer identification number and reason code.
+Contact information: phone, email.
+Address: legal and actual address.
+Responsible Manager: Link to the Employee Directory, if applicable.
+Examples for other directories:
+The Suppliers directory contains information about companies and individual entrepreneurs supplying materials for furniture production. The details are similar to the “Customers” directory, with the addition of specific delivery conditions.
+
+The "Employees" directory includes information about the company's employees, their positions, contact information, sections for recording working hours, etc.
+
+Each of these directories can be expanded or modified depending on the specific requirements of the enterprise's business processes. It is important to carefully consider the structure of each directory so that it meets the needs of production and accounting, and also ensures the flexibility and scalability of the system as a whole.
+....
+....
+Directory "Suppliers"
+Basic details:
+
+Name: name of the supplier, for example, "Horns and Hooves LLC".
+INN/KPP: for legal entities.
+Contact person: Full name of the supplier's representative.
+Phone: contact phone number.
+Email: Email address.
+Address: supplier's postal address.
+Delivery conditions: for example, minimum purchase quantity, delivery times, payment terms.
+Directory "Employees"
+Basic details:
+
+Full name: full name of the employee.
+Position: name of the position held.
+Personnel number: a unique identifier for an employee in the system.
+Department: The department in which the employee works.
+Contact phone number: employee phone number.
+Email: Employee's email address.
+Hiring date: the date the employee was hired.
+Directory "Equipment"
+Basic details:
+
+Name: the name of the equipment, for example, "Milling machine".
+Inventory number: unique number of the equipment.
+Equipment type: classification of equipment, for example, "Machines", "Tools".
+Commissioning Date: The date the equipment was started to be used.
+Status: the current state of the equipment, for example, “In operation”, “Under repair”.
+Responsible: the employee responsible for this equipment.
+Directory "Clients"
+To record information about customers who order furniture.
+
+Basic details:
+
+Name: Full name or name of the client’s organization.
+INN/KPP (for organizations): if the client is a legal entity.
+Contact information: phone, email.
+Delivery address: the address to which finished products will be delivered.
+Preferences: The client's special wishes regarding the production or delivery of products.
+Directory "Nomenclature groups"
+Used to classify materials, semi-finished products, finished products and services.
+
+Basic details:
+
+Name: name of the group, for example, “Finished Products”, “Materials”.
+Type of item: an indication of the sale of finished products.
+Directory "Suppliers"
+This directory contains information about all suppliers of materials and components.
+
+Basic details:
+
+Name: name of the supplier.
+Taxpayer Identification Number: Taxpayer Identification Number.
+Contact person: Full name of the supplier's representative.
+Contact information: telephone, email address.
+Address: supplier's legal address.
+Delivery terms: special conditions or agreements regarding timing, delivery volumes, payment terms, etc.
+Directory "Employees"
+Includes information about the company's employees, their roles and tasks in the furniture manufacturing process.
+
+Basic details:
+
+Full name: full name of the employee.
+Position: title of the position held.
+Division: department or workshop in which the employee works.
+Phone: contact phone number.
+Email: Email address.
+Hiring Date: The date you started working for the company.
+Directory "Production workshops"
+Organizes information about the various production departments or workshops involved in the furniture manufacturing process.
+
+Basic details:
+
+Name: name of the workshop.
+Location: physical address or building/room number.
+Responsible: employee responsible for managing the workshop.
+Key Equipment: A list of key equipment used in the shop.
+Production Capacity: The maximum volume of production that can be achieved in a given period.
+Directory "Equipment"
+Accounts for all machinery and equipment used to produce furniture.
+
+Basic details:
+
+Name: name of the equipment.
+Inventory number: unique number of the equipment.
+Year of manufacture: year of production of the equipment.
+Condition: current condition of the equipment (working, in need of repair, etc.).
+Location: workshop or area where the equipment is located.
+Responsible employee: the employee responsible for the operation and maintenance of the equipment.
+
+........
+
+
+Directory "Production workshops"
+This directory is intended for accounting and management of various production departments or workshops involved in the furniture manufacturing process. It allows you to centrally store information about the location, specialization, equipment and responsible employees of each workshop.
+
+Basic details to include:
+
+Name: The unique name of the workshop, which clearly identifies it among other production departments.
+Location: The physical address or description of the location of the workshop within the manufacturing area.
+Responsible: Full name of the employee responsible for the management of the workshop and the production process in it.
+Capital Equipment: A list of the most important equipment used in a furniture manufacturing workshop.
+Production Capacity: The maximum possible volume of production that a shop can produce in a given time period.
+Features: Any special conditions or features of the production process that are characteristic of a given workshop.
+Examples of entries in the directory "Production workshops":
+Name: Workshop for the production of cabinet furniture
+
+Location: Building No. 3, st. Promyshlennaya, 15
+Responsible: Ivanov Ivan Ivanovich
+Main equipment: Slitting machine, edge banding machine, drilling machine
+Production capacity: up to 500 pieces of furniture per month
+Features: High degree of automation of production lines
+Name: Workshop for the production of upholstered furniture
+
+Location: Building No. 5, st. Severnaya, 22
+Responsible: Petrova Anna Borisovna
+Main equipment: Sewing machines, glue application machine, packaging machine
+Production capacity: up to 200 sets of upholstered furniture per month
+Features: Specialization in exclusive orders, handmade
+Name: Workshop for the production of joinery products
+
+Location: Building No. 2, Vostochnaya industrial zone
+Responsible: Sidorov Petr Viktorovich
+Main equipment: Carpentry workbench, wood lathe, grinder
+Production capacity: up to 1000 parts per month
+Features: Possibility of manufacturing complex carpentry elements according to individual orders
+
+
+.........
+
+
+Directory "Materials"
+This guide contains information about all materials used in furniture production.
+
+Example entries:
+
+Name: Oak board
+
+Article: DB-001
+Unit of measurement: sq. meters
+Unit price: 1500 rub.
+Supplier: LLC "Lesnoy Balance"
+Minimum balance: 50 sq. m
+Name: Cabinet fittings
+
+Article: FSh-204
+Unit: set
+Unit price: 2500 rub.
+Supplier: JSC "MebelFur"
+Minimum balance: 20 sets
+Directory "Products"
+Contains information about finished products or products that can be made to order.
+
+Example entries:
+
+Name: Dining table "Classic"
+
+Article: ST-001
+Sale price: 20,000 rub.
+Cost: 12,000 rub.
+Composition: Oak board (2 sq. m), Table accessories (1 set)
+Production time: 5 days
+Name: Armchair "Comfort"
+
+Article: KR-056
+Sale price: 15,000 rub.
+Cost: 9000 rub.
+Composition: Textiles for upholstery (3 sq. m), Soft filling (5 kg), Accessories for chairs (1 set)
+Production time: 3 days
+Directory "Customers"
+Recording information about customers ordering furniture.
+
+Example entries:
+
+Name: Ivanov Ivan Ivanovich
+
+INN/KPP: —
+Contact details: +7 900 123 45 67, ivanov@example.com
+Address: Moscow, st. Lesnaya, 5, apt. 101
+Responsible manager: Petrova A.B.
+Name: LLC "Home Comfort"
+
+INN/KPP: 1234567890 / 987654321
+Contact details: +7 495 123 45 67, info@dom-uyut.com
+Address: Moscow, st. Promyshlennaya, 10
+Responsible manager: Sidorov P.V.
+.........
+
+1. Document "Sales order"
+This document is used to record orders from clients for the manufacture of furniture.
+
+Basic details:
+
+Order Date: The date the order was placed.
+Customer: Link to the "Customers" directory.
+List of products: A tabular part where the ordered products, their quantity and price are indicated.
+Completion date: Desired order completion date.
+Order status: New, In progress, Completed, Canceled.
+Usage example: A customer orders a dining table and four chairs. You create a “Sales Order” document, where you indicate all the details of the order, including terms and costs.
+
+2. Document "Production order"
+This document starts the furniture production process in accordance with customer orders.
+
+Basic details:
+
+Release Date: Production start date.
+Responsible: The employee responsible for fulfilling the order.
+List of products: Tabular part with a list of products for production.
+Workshop: Link to the directory "Production workshops" where the order will be made.
+Planned Completion Date: The expected completion date of production.
+Example of use: To fulfill a customer order for the production of a furniture set, a production order is created, where all the necessary products are indicated and a workshop for their production is selected.
+
+3. Document "Release of materials to production"
+Used to account for materials transferred to production for the manufacture of furniture.
+
+Basic details:
+
+Issue Date: The date on which materials were issued to production.
+Shop: The shop where the materials are issued.
+List of materials: Tabular part with a list of materials, their quantity and cost.
+Production Order: Link to the Production Order document.
+Example of use: Before starting the production of tables and chairs, you create a document “Release of materials for production”, where you indicate all the necessary materials for this order.
+
+4. Document "Finished Products"
+Records the fact of production and readiness of products for shipment to the client.
+
+Basic details:
+
+Date of completion: The date when the products were completely manufactured.
+Production Order: Link to a completed production order.
+List of products: Tabular part with a list of finished products, their quantity and cost.
+Example of use: After completing the production of a furniture set, a “Finished Products” document is created for the client, confirming the completion of the order.
+Accumulation registers
+Accumulation registers are used to account for resources, cash, materials and other accounting objects, the quantity of which changes over time.
+
+1. Register "Accounting for materials in warehouse"
+Purpose: Accounting for the quantity and cost of materials in the warehouse.
+
+Measurements:
+
+Material (link to the "Materials" directory)
+Warehouse (link to the directory "Warehouses")
+Resources:
+
+Quantity (quantity of material)
+Cost (material cost in monetary terms)
+Example of use: When materials arrive at the warehouse or are written off for production, the movement in this register is recorded.
+
+2. Register "Production costs"
+Purpose: Cost accounting for the production of finished products.
+
+Measurements:
+
+Production order (link to document "Production order")
+Type of costs (link to the directory "Types of costs")
+Resources:
+
+Amount (amount of costs in monetary terms)
+Example of use: When calculating wages for workers, writing off materials for production and other costs, movements are created in this register.
+
+Information registers
+Information registers are designed to store information that does not require accounting for changes over time.
+
+1. Register "Production Capacity Plan"
+Purpose: Accounting for available production capacity by workshop.
+
+Measurements:
+
+Workshop (link to the directory "Production workshops")
+Period (date)
+Resources:
+
+Available capacity (number of hours or production volume available for planning)
+Example of use: To plan the load of production workshops for a certain period.
+
+2. Register "Execution of customer orders"
+Purpose: Accounting for the status of fulfillment of customer orders.
+
+Measurements:
+
+Sales order (link to the "Sales order" document)
+Date (date of shipment or order status change)
+Resources:
+
+Order status (new, in progress, completed, shipped)
+Example of use: To track the stages of order fulfillment and inform the client about the status of his order.
+
+Creating a register in 1C:Enterprise
+To create a register:
+
+Open the 1C configurator.
+In the metadata tree, select the section corresponding to the type of register you want to create (for example, "Accumulation registers" for materials or cost accounting, "Detail registers" for capacity planning or order fulfillment).
+
+Right-click on the selected section and select "Create" -> "Accumulation Register" or "Information Register" depending on your needs.
+
+In the designer window that opens, set the basic register parameters:
+
+Name: Provide a unique name for the register that clearly reflects its purpose.
+Synonym: You can specify a clear name in Russian if the original name was specified in technical language or abbreviations.
+Dimensions: Add dimensions for your register. Dimensions serve to group and analyze data in a register. For example, for the register “Accounting for materials in warehouse”, the dimensions can be “Material” and “Warehouse”.
+Resources: Determine the resources that will be counted in the register. For an accumulation register, these can be quantitative and cost indicators, for example, “Quantity” and “Cost” for accounting for materials.
+Details: In the information registers, you can add additional fields (details) that will store important information, for example, “Order status” for the “Execution of customer orders” register.
+After setting the basic register parameters, proceed to setting up the list and object forms (if necessary) through the corresponding tabs in the designer.
+
+Save the created register by closing the constructor.
+
+Examples of using registers
+For the "Accounting for materials in warehouse" register, you can set up automatic creation of movements when receiving materials from suppliers and when writing off materials for production. This will allow you to keep accurate records of the remaining materials in the warehouse and their costs.
+
+In the "Production Costs" register, you can take into account all costs associated with the production process, including material costs, workers' wages, equipment depreciation, etc. This will give you a complete picture of the cost of production.
+
+The "Customer Order Fulfillment" register can be used to monitor the status of order fulfillment, which will allow you to quickly respond to delays and inform customers about the readiness of their orders.
+
+Thus, registers in 1C:Enterprise are a powerful tool for recording and analyzing key aspects of the production and commercial activities of an enterprise.
+
+.........
+In order for the “Furniture Manufacturing” subsystem in 1C:Enterprise to work effectively, you need to correctly link the created directories, documents and registers. This will ensure data integrity and allow automation of accounting and production management processes. Let's look at how to connect the main elements of the system.
+
+1. Connection of directories with documents
+The "Customer Order" document must reference the "Customers" directory to select a customer and the "Products" directory to indicate the products being ordered. This allows you to automatically pull up information about prices and product composition when placing an order.
+
+The "Production Order" document is linked to the "Sales Order" document to record which products need to be produced and in what quantity. It should also include a link to the Shop Facility Directory to indicate where the work will be performed.
+
+2. Using registers to account for costs and materials
+The "Accounting for materials in warehouse" register is used to track the availability and movement of materials. When creating the document "Issue of materials for production", it is necessary to generate entries in this register, reducing the amount of available materials in the warehouse.
+
+The "Production Costs" register must be filled out based on data from the documents "Release of materials for production" and "Calculation of salaries to employees" (if any). This allows all production costs to be taken into account.
+
+3. Automation of work with registers
+Use the document posting mechanism to automatically record in registers. For example, when posting the document “Release of materials to production,” entries are automatically created in the “Accounting for materials in warehouse” register.
+
+To record the fulfillment of orders and the shipment of finished products, use the “Shipment of Goods” document, which will influence the “Fulfillment of Customer Orders” register, reflecting the order status as completed.
+
+4. Processing and reports
+Create processing and reports that will analyze data from registers and provide up-to-date information on warehouse status, production costs and order fulfillment status. This will allow you to quickly make management decisions.
+
+For example, a manufacturing cost report can aggregate data from the Manufacturing Cost register by cost element and production order, allowing you to analyze product costs.
+
+........
+
+
+1. Report on materials in warehouse
+Purpose: Provides information about the current balances of materials in the warehouse, which allows you to plan purchases in a timely manner and avoid delays in production.
+
+Data for the report:
+
+Name of material
+Quantity in stock
+Remaining cost
+Material requirements based on planned production orders
+2. Report on production orders
+Purpose: Shows the status of current production orders, including due dates and readiness stages. This report helps coordinate production activities and inform customers about the status of their orders.
+
+Data for the report:
+
+Order number
+Customer
+List of products in the order
+Planned and actual completion date
+Execution Status
+3. Report on production costs
+Purpose: Analyzes production costs for a certain period. Includes a breakdown by type of cost (materials, workers' wages, equipment depreciation, etc.), which allows you to evaluate production efficiency and find ways to optimize costs.
+
+Data for the report:
+
+Cost type
+Planned cost amount
+Actual cost
+Deviations from the plan
+4. Analysis of order fulfillment
+Purpose: The report shows how effectively the company fulfills customer orders - how many orders are completed on time, how many with delays and the reasons for the delays.
+
+Data for the report:
+
+Order
+Customer
+Planned completion date
+Actual due date
+Order status
+Reason for delay (if applicable)
+Connecting reports to the system
+For these reports to be integrated into the system and work correctly, you must:
+
+Create report objects in the 1C:Enterprise configurator.
+Set data sources for each report using previously created information and accumulation registers, directories and documents.
+Develop report layouts that determine their appearance.
+Configure report settings so that users can filter data by various criteria (for example, by date, by workshop, by customer).
+Test reports on real data to verify their correctness and usefulness.
+Creating an effective reporting system requires close communication between analysts, developers, and system users to ensure that the information provided is relevant, accurate, and useful for decision making.
